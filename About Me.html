@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script src="myscripts.js"></script>
+        <script src="jscript.js"></script>
     </head>
     <body>
         <nav>
@@ -31,15 +34,42 @@
             </section>
 
             <section id="projects">
+                <h3>Projects</h3>
                 <div class="projects-container">
-                    <h3>Projects</h3>
-                    <div class="project-carousel-container">
+                    <div class="Containers">
+                        <div class="MessageInfo">1 / 4</div>
                         <a href="https://github.com/robertbarry73/Liquicity-Home-Page.git"><img src="Images/Liquicity Logo.jpg" alt="Liquicity Home Page"></a>
-                        <a href="https://github.com/robertbarry73/Responsive-Club-Website.git"><img src="Images/Responsive Club Website.jpg" alt="Responsive Club Website"></a>
-                        <a href="https://github.com/robertbarry73/excursions.git"><img src="https://content.codecademy.com/programs/freelance-one/excursion/images/camp.jpg" alt="camp"></a>
-                        <a href="https://github.com/robertbarry73/groupproj1.git"><img src="Images/CA Logo.jpg" alt="codecademy group project"></a>
+                        <div class="Info">Liquicity Home Page</div>
                     </div>
-                </div>              
+                    <div class="Containers">
+                        <div class="MessageInfo">2 / 4</div>
+                        <a href="https://github.com/robertbarry73/Responsive-Club-Website.git"><img src="Images/Responsive Club Website.jpg" alt="Responsive Club Website"></a>
+                        <div class="Info">Responsive Club Website</div>
+                    </div>
+                    <div class="Containers">
+                        <div class="MessageInfo">3 / 4</div>
+                        <a href="https://github.com/robertbarry73/excursions.git"><img src="https://content.codecademy.com/programs/freelance-one/excursion/images/camp.jpg" alt="camp"></a>
+                        <div class="Info">Excursions Project</div>
+                    </div>
+                    <div class="Containers">
+                        <div class="MessageInfo">4 / 4</div>
+                        <a href="https://github.com/robertbarry73/groupproj1.git"><img src="Images/CA Logo.jpg" alt="codecademy group project"></a>
+                        <div class="Info">Codeacademy Group Project</div>
+                    </div>
+
+                    <!-- Back and forward buttons -->
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>   
+                <br>
+                
+                <!-- The circles/dots -->
+                <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                    <span class="dots" onclick="currentSlide(4)"></span>
+                </div>
             </section>
 
             <section id="skills">
