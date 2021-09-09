@@ -38,6 +38,14 @@ html {
     font-size: 3rem;
   }
 
+  h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+    font-size: 3rem;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -69,6 +77,7 @@ html {
     grid-template-columns: repeat(3, 300px);
     gap: 10px;
     justify-content: space-around;
+    margin-bottom: 100px;
   }
 
   .about-me-container img {
@@ -86,7 +95,7 @@ html {
 /* Projects container */
 
     .projects-container {
-    max-width: 1000px;
+    width: 50%;
     position: relative;
     margin: auto;
   }
@@ -180,4 +189,41 @@ html {
   @keyframes fade {
     from {opacity: .5}
     to {opacity: 2}
+  }
+
+  /* Skills Container */
+
+  .skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  
+  .skills-container img {
+    height: 100px;
+    width: 150px;
+  }
+
+  .skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
+
+  /* Contact */
+
+  .contact-container > *{
+    text-align: left;
+  }
+  .contact-info-container img {
+    height: 100px;
+    width: 100px;
   }
